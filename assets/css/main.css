@@ -1051,7 +1051,6 @@ ol {
   font-size: 34px;
   margin-bottom: 25px;
   line-height: 42px;
-  text-transform: capitalize;
   position: relative;
   font-weight: 800;
 }
@@ -1716,7 +1715,7 @@ ol {
           box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background: #fff;
+  background: #D6C99E;
   padding: 0px 0;
 }
 
@@ -1993,6 +1992,7 @@ ol {
 }
 
 .hero-area .hero-image img {
+  align-items: center;
   width: 100%;
 }
 
@@ -2005,6 +2005,7 @@ ol {
 @media (max-width: 767px) {
   .hero-area .hero-image {
     margin-top: 40px;
+    display: block;
   }
 }
 
@@ -2232,43 +2233,60 @@ ol {
 }
 
 .election-info {
-  background: #f9f9f9;
+  background: #D6C99E;
   padding: 10%;
   border-radius: 5px;
   text-align: center;
 }
 
 /*======================================
-    Features Area CSS
+    Misison Area CSS
 ========================================*/
-.features {
-  background-color: #f9f9f9;
+
+.focus {
+  background-color: #ffffff;
+  color: black;
 }
 
-.features .section-title {
+
+
+/*======================================
+    focus Area CSS
+========================================*/
+.focus {
+  background-color: #203160;
+  color: white;
+}
+
+.focus .section-title {
   margin-bottom: 30px;
 }
 
-.features .single-feature {
+.focus h2 { 
+  font-weight: 400;
+  color: white;
+}
+
+.focus .single-feature {
   text-align: left;
   padding: 35px;
-  background-color: #fff;
+  background-color: #D6C99E;
   border-radius: 6px;
   position: relative;
-  margin-top: 30px;
+  margin-top: 40px;
   border: 1px solid #eee;
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
 
-.features .single-feature:hover {
+.focus .single-feature:hover {
   -webkit-box-shadow: 0px 3px 5px #00000017;
           box-shadow: 0px 3px 5px #00000017;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-.features .single-feature i {
+.focus .single-feature i {
   height: 60px;
   width: 60px;
   line-height: 60px;
@@ -2283,15 +2301,35 @@ ol {
   margin-bottom: 30px;
 }
 
-.features .single-feature h3 {
+.focus .single-feature h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.features .single-feature p {
+.focus .single-feature p {
   line-height: 22px;
 }
+
+/*======================================
+    Community Section CSS
+========================================*/
+.community img {
+  margin-top: 40px; 
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.community h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.community li {
+  color: black;
+  font-size: 20px;
+}
+
 
 /*======================================
     Our Achievement CSS
@@ -2359,192 +2397,60 @@ ol {
   }
 }
 
-/*=============================
-	Pricing Table CSS
-===============================*/
-.pricing-table {
-  background-color: #f9f9f9;
-}
-
-.pricing-table .section-title {
-  margin-bottom: 50px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .pricing-table .section-title {
-    margin-bottom: 30px;
-  }
-}
-
-.pricing-table .single-table {
-  border: 1px solid #eee;
-  border-radius: 10px;
-  margin-top: 30px;
-  background-color: #fff;
-  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
-}
-
-.pricing-table .single-table:hover:hover {
-  -webkit-box-shadow: 0px 3px 5px #00000017;
-          box-shadow: 0px 3px 5px #00000017;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
-
-.pricing-table .single-table .table-head {
-  padding: 25px;
-  border-bottom: 1px solid #eee;
-}
-
-.pricing-table .single-table .table-head .title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.pricing-table .single-table .table-head p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.pricing-table .single-table .table-head .price {
-  padding: 30px 0;
-}
-
-.pricing-table .single-table .table-head .price .amount {
-  font-size: 30px;
-  font-weight: 700;
-  display: inline-block;
-}
-
-.pricing-table .single-table .table-head .price .amount .duration {
-  display: inline-block;
-  font-size: 14px;
-  color: #888;
-  font-weight: 400;
-  margin-left: 3px;
-}
-
-.pricing-table .single-table .table-head .button .btn {
-  width: 100%;
-  padding: 12px 30px;
-  font-size: 13px;
-  background-color: #081828;
-}
-
-.pricing-table .single-table .table-head .button .btn:hover {
-  background-color: #203160;
-  color: #fff;
-}
-
-.pricing-table .single-table .table-content {
-  padding: 25px;
-}
-
-.pricing-table .single-table .table-content .middle-title {
-  font-size: 13px;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
-.pricing-table .single-table .table-content .table-list li {
-  position: relative;
-  padding-left: 25px;
-  font-size: 14px;
-  margin-bottom: 13px;
-}
-
-.pricing-table .single-table .table-content .table-list li:last-child {
-  margin: 0;
-}
-
-.pricing-table .single-table .table-content .table-list li i {
-  color: #203160;
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  top: 4px;
-}
-
 /*======================================
-    Call To Action CSS
+    Family Section CSS
 ========================================*/
-.call-action {
+
+.family {
   background-color: #203160;
+  color: white;
 }
 
-.call-action .cta-content {
-  text-align: center;
-  padding: 0px 50px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .call-action .cta-content {
-    padding: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .call-action .cta-content {
-    padding: 0;
-  }
-}
-
-.call-action .cta-content h2 {
-  color: #fff;
-  line-height: 50px;
-  font-size: 38px;
-  font-weight: 700;
+.family .section-title {
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .call-action .cta-content h2 {
-    font-size: 32px;
-    line-height: 45px;
-  }
+.family h2 { 
+  font-weight: 400;
+  color: white;
 }
 
-@media (max-width: 767px) {
-  .call-action .cta-content h2 {
-    font-size: 25px;
-    line-height: 35px;
-  }
+.family h3 {
+  color: white;
+  padding-top: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.call-action .cta-content p {
-  color: #fff;
-  padding: 0px 50px;
+.family img {
+  margin-top: 40px; 
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: 40px; 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .call-action .cta-content p {
-    padding: 0;
-  }
+/*======================================
+    Background Section CSS
+========================================*/
+
+.background h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-@media (max-width: 767px) {
-  .call-action .cta-content p {
-    padding: 0;
-  }
+.background li {
+  color: black;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.call-action .cta-content .button {
-  margin-top: 40px;
+.background img {
+  max-width: 200px;
 }
 
-.call-action .cta-content .button .btn {
-  background-color: #fff;
-  color: #203160;
-}
-
-.call-action .cta-content .button .btn:hover {
-  color: #fff;
-  background-color: #081828;
-}
 
 /*======================================
 	Error 404 CSS
