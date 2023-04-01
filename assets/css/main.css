@@ -1624,6 +1624,15 @@ ol {
   width: 160px;
 }
 
+.navbar-brand h1 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 50px;
+  color: #fff;
+  text-shadow: 0px 3px 8px #00000017;
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header .navbar-brand img {
     width: 170px;
@@ -1992,7 +2001,7 @@ ol {
 }
 
 .hero-area .hero-image img {
-  align-items: center;
+  align-items: right;
   width: 100%;
 }
 
@@ -2017,7 +2026,7 @@ ol {
 }
 
 .hero-area .hero-content h1 {
-  font-size: 38px;
+  font-size: 56px;
   font-weight: 800;
   line-height: 50px;
   color: #fff;
@@ -2031,13 +2040,10 @@ ol {
 
 .hero-area .hero-content h2 {
   color: #fff;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 22px;
   margin-bottom: 30px;
   text-align: left;
-  padding-top: 30%;
-  padding-bottom: 30%
-  
 }
 
 .hero-area .hero-content h3 {
@@ -2053,11 +2059,7 @@ ol {
 .hero-area .hero-content p {
   margin-bottom: 10px;
   font-size: 18px;
-  color: #203160;
-}
-
-.hero-area img {
-  border-radius: 50%;
+  color: white;
 }
 
 .hero-area .hero-content .button {
@@ -2275,7 +2277,6 @@ ol {
   border-radius: 6px;
   position: relative;
   margin-top: 40px;
-  border: 1px solid #eee;
   -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
 }
@@ -2329,73 +2330,6 @@ ol {
 .community li {
   color: black;
   font-size: 20px;
-}
-
-
-/*======================================
-    Our Achievement CSS
-========================================*/
-.our-achievement {
-  background-color: #203160;
-  text-align: center;
-  padding: 130px 0;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .our-achievement {
-    padding: 80px 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .our-achievement {
-    padding: 60px 0;
-  }
-}
-
-.our-achievement .title h2 {
-  color: #fff;
-  font-weight: 700;
-  font-size: 35px;
-  margin-bottom: 10px;
-}
-
-.our-achievement .title p {
-  color: #fff;
-}
-
-.our-achievement .single-achievement {
-  margin-top: 50px;
-  text-align: center;
-  padding: 0px 10px;
-}
-
-.our-achievement .single-achievement h3 {
-  font-size: 35px;
-  font-weight: 800;
-  display: block;
-  margin-bottom: 5px;
-  color: #fff;
-}
-
-.our-achievement .single-achievement p {
-  font-size: 15px;
-  color: #fff;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .our-achievement .title h2 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .our-achievement .single-achievement {
-    margin-top: 30px;
-  }
-  .our-achievement .single-achievement h3 {
-    font-size: 28px;
-  }
 }
 
 /*======================================
@@ -2452,6 +2386,66 @@ ol {
   max-width: 200px;
 }
 
+/*======================================
+    Testimonials Section CSS
+========================================*/
+
+.testimonials {
+  background-color: #203160;
+}
+
+.testimonials .single-feature {
+  max-width: 80%;
+  align-items: center;
+  text-align: left;
+  padding: 35px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  margin-top: 40px;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.testimonials .single-feature:hover {
+  -webkit-box-shadow: 0px 3px 5px #00000017;
+          box-shadow: 0px 3px 5px #00000017;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.testimonials .single-feature i {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+  background-color: #203160;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 4px 6px #0000002a;
+          box-shadow: 0px 4px 6px #0000002a;
+  margin-bottom: 30px;
+}
+
+.testimonials .single-feature h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.testimonials .single-feature p {
+  line-height: 22px;
+}
+
+.testimonials img {
+  max-height: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 /*======================================
 	Error 404 CSS
@@ -2536,10 +2530,9 @@ ol {
 .footer {
   background-color: #081828;
   position: relative;
-}
-
-.footer .footer-top {
-  padding: 100px 0;
+  padding: 100px;
+  color: white;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
