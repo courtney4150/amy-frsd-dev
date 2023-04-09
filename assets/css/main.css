@@ -18,6 +18,10 @@ body {
   font-size: 15px;
 }
 
+html,body{
+  overflow-x: hidden;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -1979,6 +1983,8 @@ ol {
 /*======================================
      End Header CSS
   ========================================*/
+
+
 /*======================================
     Hero Area CSS
 ========================================*/
@@ -2327,6 +2333,14 @@ ol {
 .community li {
   color: black;
   font-size: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+@media (max-width: 767px) {
+  .community img {
+    max-width: 250px;
+  }
 }
 
 /*======================================
@@ -2349,7 +2363,7 @@ ol {
 
 .family h3 {
   color: white;
-  padding-top: 20%;
+  padding-top: 10%;
   margin-right: 10%;
   margin-left: 10%;
 }
@@ -2359,6 +2373,12 @@ ol {
   margin-right: 15%;
   margin-left: 15%;
   margin-bottom: 40px; 
+}
+
+@media (max-width: 767px) {
+  .family img {
+    max-width: 250px;
+  }
 }
 
 /*======================================
@@ -2382,6 +2402,17 @@ ol {
 .background img {
   max-width: 200px;
 }
+
+@media (max-width: 767px) {
+  .background img {
+    padding-top: 10px;
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /*======================================
     Testimonials Section CSS
@@ -2432,6 +2463,7 @@ ol {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .testimonials .single-feature p {
@@ -2443,6 +2475,24 @@ ol {
   margin-left: 5%;
   margin-right: 5%;
 }
+
+/*======================================
+    Donate Section CSS
+========================================*/
+
+.donate {
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.donate h3 {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
 
 /*======================================
 	Error 404 CSS
@@ -2530,6 +2580,10 @@ ol {
   padding: 100px;
   color: white;
   text-align: center;
+}
+
+.footer p {
+  padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
