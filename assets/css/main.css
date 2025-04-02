@@ -2491,6 +2491,12 @@ ol {
   margin-left: auto;
   margin-right: auto;
   font-weight: 400;
+  font-size: 22px;
+}
+
+.donate a {
+  text-decoration: underline;
+  color: #0000EE;
 }
 
 
