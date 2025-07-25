@@ -2239,10 +2239,15 @@ ol {
 }
 
 .election-info {
-  background: #D6C99E;
-  padding: 10%;
+  background: #ffffff;
+  padding: 5%;
   border-radius: 5px;
   text-align: center;
+  margin-top: 40px;
+}
+
+.election-info p {
+  color: #203160 !important;
 }
 
 /*======================================
