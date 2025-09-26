@@ -59,7 +59,7 @@ button:focus,
 select {
   -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
-  color: #081828;
+  color: #0C243E;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -119,7 +119,7 @@ h5,
 h6 {
   font-weight: 600;
   margin: 0px;
-  color: #081828;
+  color: #0C243E;
 }
 
 h1 a,
@@ -1167,7 +1167,7 @@ ol {
   box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
   -webkit-transform: translate3d(0, -5px, 0);
   transform: translate3d(0, -5px, 0);
-  background-color: #081828;
+  background-color: #0C243E;
 }
 
 /* Overlay */
@@ -1183,7 +1183,7 @@ ol {
   width: 100%;
   height: 100%;
   opacity: 0.4;
-  background: #081828;
+  background: #0C243E;
   content: "";
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -1226,7 +1226,7 @@ ol {
 
 .pagination .pagination-list li a {
   background: #fff;
-  color: #081828;
+  color: #0C243E;
   font-weight: 400;
   font-size: 14px;
   border-radius: 5px;
@@ -1295,7 +1295,7 @@ ol {
 
 .button .btn:hover {
   color: #fff;
-  background-color: #081828;
+  background-color: #0C243E;
   -webkit-box-shadow: 0px 4px 4px #0000000f;
           box-shadow: 0px 4px 4px #0000000f;
 }
@@ -1666,7 +1666,7 @@ ol {
 }
 
 .header.sticky .button .btn:hover {
-  background-color: #081828;
+  background-color: #0C243E;
   color: #fff;
 }
 
@@ -1696,7 +1696,7 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-  color: #081828;
+  color: #0C243E;
 }
 
 .header .navbar .navbar-nav .nav-item .sub-menu a.active {
@@ -2081,7 +2081,7 @@ ol {
 }
 
 .hero-area .hero-content .button .btn:hover {
-  background-color: #081828;
+  background-color: #0C243E;
   color: #fff;
 }
 
@@ -2110,7 +2110,7 @@ ol {
 
 .hero-area .hero-content .button .video-button:hover .video {
   color: #fff;
-  background-color: #081828;
+  background-color: #0C243E;
 }
 
 .hero-area .hero-content .button .video-button .video {
@@ -2254,12 +2254,33 @@ ol {
     Misison Area CSS
 ========================================*/
 
-.mission {
+.mission-goals {
   background-color: #ffffff;
-  color: black;
-  padding-bottom: 0;
+  color: #0C243E !important;
+  margin-bottom: 100px;
 }
 
+#mission h2 {
+  color: #0C243E !important;
+}
+
+.mission-goals p {
+  text-align: center;
+  color: #0C243E !important;
+  font-size: 20px;
+}
+
+.mission-goals li {
+  text-align: center;
+  color: #0C243E !important;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.mission {
+  padding-bottom: 0;
+}
 
 
 /*======================================
@@ -2338,10 +2359,15 @@ ol {
 }
 
 .community li {
-  color: black;
+  color: #0C243E;
   font-size: 20px;
   margin-right: 10%;
   margin-left: 10%;
+}
+
+.community p {
+  color: #0C243E;
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
@@ -2390,10 +2416,41 @@ ol {
 }
 
 /*======================================
+    Endorsement Link Section CSS
+========================================*/
+
+.words h3{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#words-button {
+  text-align: center;
+}
+
+#endorsement-button {
+  color: white;
+  background-color: #0C243E;
+  font-size: 30px;
+}
+
+
+/*======================================
     Background Section CSS
 ========================================*/
 
+
+.background {
+  color: white;
+  background-color: #0C243E;
+}
+
+.background h2 {
+  color: white;
+}
+
 .background h3 {
+  color: white;
   margin-top: 30px;
   margin-bottom: 15px;
   margin-right: 10%;
@@ -2401,7 +2458,7 @@ ol {
 }
 
 .background li {
-  color: black;
+  color: white;
   font-size: 20px;
   margin-right: 10%;
   margin-left: 10%;
@@ -2484,13 +2541,84 @@ ol {
   margin-right: 5%;
 }
 
+
+
+/*======================================
+    Endorsements Section CSS
+========================================*/
+
+.endorsements {
+  background-color: white;
+  color: #0C243E;
+}
+
+.endorsements .section-title {
+  margin-bottom: 30px;
+}
+
+.endorsements img {
+  display: block;
+  margin: auto;
+  max-height: 400px;
+}
+
+.endorsements p {
+  color: #0C243E;
+  font-size: 18px;
+}
+
+.quote {
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+@media (max-width: 767px) {
+  .endorsements img {
+    max-width: 250px;
+  }
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #0C243E;
+}
+
+#evelyn-button, #zoe-button {
+  color: white;
+  background-color: #0C243E;
+}
+
+
+/*======================================
+    Endorsements Hero Area CSS
+========================================*/
+.endorse-hero-area {
+  position: relative;
+  background: #0C243E;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .endorse-hero-area {
+    padding: 150px 0 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .endorse-hero-area {
+    padding: 120px 0 50px 0;
+  }
+}
+
+
 /*======================================
     Donate Section CSS
 ========================================*/
 
 .donate {
   background: white;
-  color: black;
+  color: #0C243E;
   text-align: center;
 }
 
@@ -2563,7 +2691,7 @@ ol {
 .error-area .error-content h2 {
   font-size: 25px;
   margin-bottom: 10px;
-  color: #081828;
+  color: #0C243E;
   font-weight: 700;
 }
 
@@ -2589,7 +2717,7 @@ ol {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #081828;
+  background-color: #0C243E;
   position: relative;
   padding: 100px;
   color: white;
