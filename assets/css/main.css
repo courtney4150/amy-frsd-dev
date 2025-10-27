@@ -2248,6 +2248,7 @@ ol {
 
 .election-info p {
   color: #0C243E !important;
+  font-size: 24px;
 }
 
 /*======================================
@@ -2559,7 +2560,6 @@ ol {
 .endorsements img {
   display: block;
   margin: auto;
-  max-height: 400px;
 }
 
 .endorsements p {
